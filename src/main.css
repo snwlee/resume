@@ -17,7 +17,8 @@ body {
     sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
     Noto Color Emoji;
   letter-spacing: -0.3px;
-  color: #222222;
+  color: #D3CFC9;
+  background: #181A1B;
   padding-bottom: 2rem;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
@@ -97,7 +98,7 @@ h4 {
 h5 {
   font-size: 1.3rem;
   margin: 0 0 0.5rem 0;
-  color: #333333;
+  color: #ffffff;
 }
 
 ul {
