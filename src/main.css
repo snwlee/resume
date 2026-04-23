@@ -505,6 +505,26 @@ h1 {
   margin-bottom: 0.38rem;
 }
 
+.cert-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.cert-badge {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.cert-meta {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 0.15rem;
+}
+
 .experience-body {
   display: grid;
   gap: 0.82rem;
