@@ -10,7 +10,7 @@
     <meta name="theme-color" content="#0f766e" />
     <meta
       name="description"
-      content="Resume of Sunwoo Lee, a backend engineer focused on enterprise integration, identity, automation, and product operations."
+      content="Resume of Sunwoo Lee, a backend engineer focused on enterprise integration, identity, automation, and production reliability."
     />
 
     <meta property="og:url" content="https://snwlee.github.io/resume/index-en.html" />
@@ -19,7 +19,7 @@
     <meta property="og:image" content="./resume-cover.png" />
     <meta
       property="og:description"
-      content="Resume of Sunwoo Lee, a backend engineer focused on enterprise integration, identity, automation, and product operations."
+      content="Resume of Sunwoo Lee, a backend engineer focused on enterprise integration, identity, automation, and production reliability."
     />
     <meta property="og:locale" content="en_US" />
 
@@ -28,7 +28,7 @@
     <meta name="twitter:title" content="Resume - Sunwoo Lee" />
     <meta
       name="twitter:description"
-      content="Resume of Sunwoo Lee, a backend engineer focused on enterprise integration, identity, automation, and product operations."
+      content="Resume of Sunwoo Lee, a backend engineer focused on enterprise integration, identity, automation, and production reliability."
     />
     <meta name="twitter:image" content="./resume-cover.png" />
 
@@ -60,16 +60,16 @@
           <div>
             <h1>Sunwoo Lee</h1>
             <p class="hero-summary">
-              I have spent the last 3+ years building enterprise backend systems that
+              Since June 2023, I have worked on enterprise backend features that
               connect heterogeneous identity, directory, and messaging environments.
-              My strongest work has been in production-critical areas: HR sync batch
-              processing, SAML SSO/SLO across multiple IdPs, and notification recovery
-              flows after deadlocks and delivery failures. I also reduce repetitive
-              work through internal automation that improves team productivity.
+              My work has focused on areas that often create operational issues:
+              HR sync batch processing, SAML SSO/SLO across multiple IdPs, and
+              notification recovery after deadlocks and delivery failures. I have
+              also contributed to internal automation for recurring engineering work.
             </p>
             <ul class="key-points">
-              <li>3+ years of backend development with Java 21, Spring Boot, and MyBatis</li>
-              <li>Improved performance and operational stability of Spring Batch-based HR sync jobs</li>
+              <li>Enterprise integration backend development with Java 21, Spring Boot, and MyBatis</li>
+              <li>Analyzed bottlenecks and handled operational issues in Spring Batch-based bulk HR synchronization jobs</li>
               <li>Implemented SAML SSO / SLO / logout flows across Okta, OneLogin, and MS Entra ID environments</li>
               <li>Resolved deadlocks, defined retry policies, and built DLQ-based recovery flows for notification integrations</li>
             </ul>
@@ -87,7 +87,7 @@
             <dl class="quick-list">
               <div>
                 <dt>Experience</dt>
-                <dd>3+ years in enterprise integration backend</dd>
+                <dd>Enterprise integration backend since Jun 2023</dd>
               </div>
               <div>
                 <dt>Location</dt>
@@ -111,24 +111,20 @@
       <section class="section">
         <div class="section-head">
           <h2>Core Strengths</h2>
-          <p>Most of my work has been turning customer-specific exceptions into product rules and operational guardrails.</p>
+          <p>Most of my work turns customer-specific exceptions into product settings, guardrails, and reprocessing flows.</p>
         </div>
-        <div class="strength-grid">
+        <div class="strength-grid compact">
           <article class="strength-card">
             <h3>Enterprise Integration</h3>
-            <p>Built product integrations across customer-specific identity, organization data, and interface constraints.</p>
+            <p>Implemented and operated integrations using LDAP, REST, DB, File, MQ, UDP, and multiple DB engines.</p>
           </article>
           <article class="strength-card">
             <h3>Identity & Access</h3>
-            <p>Worked on SAML-based SSO, metadata lifecycle handling, SSO/SLO flows, and access-control related issues.</p>
+            <p>Implemented and checked SAML SP, SSO/SLO, metadata, and session invalidation flows across Okta, OneLogin, and MS Entra ID.</p>
           </article>
           <article class="strength-card">
             <h3>Operational Reliability</h3>
-            <p>Improved fragile areas such as batch jobs, notification pipelines, and session handling with safeguards, retries, and recovery flows.</p>
-          </article>
-          <article class="strength-card">
-            <h3>Developer Automation</h3>
-            <p>I reduce repetitive work with scripts and internal tooling to improve delivery speed and operational efficiency.</p>
+            <p>Applied guards, retries, and DLQs to paths that can lead to incidents, such as bulk changes and notification failures.</p>
           </article>
         </div>
       </section>
@@ -152,14 +148,14 @@
                 <span class="project-time"><time datetime="2023-06">Jun 2023</time> - Present</span>
               </div>
               <p class="project-summary">
-                Unified heterogeneous customer directory systems at the product level and
-                built safeguards to prevent large-scale HR data misapplication.
+                Worked on connector patterns for heterogeneous customer directory systems and
+                built safeguards to reduce the risk of large-scale HR data mistakes.
               </p>
               <ul class="impact-list">
-                <li>Absorbed diverse customer directory systems (LDAP, REST, DB, File, MQ, UDP across 5 DB engines) via connector abstraction, making the product resilient to customer environment changes</li>
-                <li>Designed a 3-layer data safety guard to prevent bulk HR data errors — independently controlling reduction rate, absolute minimum, and resignation thresholds</li>
-                <li>Improved bottlenecks and processing flows in Spring Batch-based HR synchronization jobs, raising performance and operational stability</li>
-                <li>Refactored async flows from Future-based logic to CompletableFuture, improving readability and maintainability</li>
+                <li>Implemented customer directory integrations across LDAP, REST, DB, File, MQ, UDP, and Oracle, MSSQL, PostgreSQL, MySQL, and MariaDB</li>
+                <li>Implemented data safety guards for bulk HR updates using reduction-rate, absolute-minimum, and resignation thresholds</li>
+                <li>Analyzed bottlenecks and clarified processing flows in Spring Batch-based HR synchronization jobs to improve operational troubleshooting</li>
+                <li>Refactored async flows from Future-based logic to CompletableFuture, improving exception handling and maintainability</li>
               </ul>
               <p class="stack"><strong>Tech</strong>: Java 21, Spring Boot, Spring Batch, MyBatis, Oracle, MSSQL, PostgreSQL, MySQL, MariaDB, LDAP, REST API, IBM MQ, UDP</p>
             </div>
@@ -170,13 +166,13 @@
                 <span class="project-time"><time datetime="2023-06">Jun 2023</time> - Present</span>
               </div>
               <p class="project-summary">
-                Even with the same standard, each IdP implements it differently — causing frequent
-                integration failures. Designed and operated a SAML SP structure that absorbs this
-                divergence at the product level.
+                Even with the same standard, each IdP implements it differently, which can cause
+                integration issues. Implemented and operated SAML SP configuration and session
+                invalidation flows to handle those differences inside a single product.
               </p>
               <ul class="impact-list">
-                <li>Designed and operated a SAML SP structure to accommodate per-customer IdP differences (Okta, OneLogin, MS Entra ID) within a single product</li>
-                <li>Organized multi-IdP support configuration and operational structure</li>
+                <li>Implemented and operated SAML SP integrations that support per-customer IdP differences across Okta, OneLogin, and MS Entra ID</li>
+                <li>Organized configuration values, metadata handling, and operational checks for multi-IdP support</li>
                 <li>Implemented SAML SLO-based IdP logout and session invalidation flows, handling operational differences across IdPs</li>
                 <li>Investigated and resolved login and permission-related integration issues across customer environments</li>
               </ul>
@@ -194,7 +190,7 @@
               </p>
               <ul class="impact-list">
                 <li>Integrated 6 notification channels: Slack, KakaoTalk, Email, SMS, MQ, and UDP</li>
-                <li>Analyzed and resolved deadlocks in notification processing flows, improving delivery stability</li>
+                <li>Analyzed deadlocks in notification processing flows and clarified processing order and failure isolation rules to prevent recurrence</li>
                 <li>Defined retry policies by failure type and routed failed notifications to a DLQ, enabling controlled recovery and reprocessing</li>
                 <li>Handled per-customer notification customization beyond standard channels — channel selection, message format, and delivery conditions</li>
               </ul>
@@ -207,11 +203,11 @@
                 <span class="project-time">Internal initiative</span>
               </div>
               <p class="project-summary">
-                Designed internal automation pipelines and tooling to improve team productivity and operational visibility.
+                Implemented internal automation pipelines and tooling to reduce recurring work and improve operational visibility.
               </p>
               <ul class="impact-list">
                 <li>Built AWS Bedrock usage monitoring with Kinesis Data Firehose → S3 → Glue → Athena plus CloudWatch, CloudTrail, and SNS alerting</li>
-                <li>Built a SQLite knowledge base from 25k+ issues, 130k+ comments, and 15k+ commits, then implemented the first version of an autonomous flow from issue analysis to plan generation, code change, and build</li>
+                <li>Built a SQLite knowledge base from 25k+ issues, 130k+ comments, and 15k+ commits, then implemented a prototype that assists issue analysis and work planning</li>
                 <li>Built a TypeScript CLI that assembles per-deployment context into customer-specific NotebookLM chatbots, and operated an internal AI newsletter pipeline for the engineering team</li>
               </ul>
               <p class="stack">
@@ -225,11 +221,11 @@
                 <span class="project-time">Internal initiative</span>
               </div>
               <p class="project-summary">
-                Automated and standardized recurring engineering tasks across security checks, environment upgrades, and test infrastructure.
+                Automated and documented recurring engineering tasks across security checks, environment upgrades, and test infrastructure.
               </p>
               <ul class="impact-list">
-                <li>Integrated Sparrow into the CI/CD pipeline, removing manual security scan runs per project</li>
-                <li>Led SVN → Git migration, establishing branch strategy and commit conventions for the team</li>
+                <li>Integrated Sparrow into the CI/CD pipeline to reduce manual security scan runs per project</li>
+                <li>Helped with SVN → Git migration by organizing branch strategy and commit conventions</li>
                 <li>Automated JDK 8 → 21 upgrades and sensitive property migration to KMS in reusable form</li>
                 <li>Configured Docker-based Oracle, MSSQL, PostgreSQL, MySQL, and MariaDB test environments</li>
               </ul>
@@ -250,11 +246,11 @@
               <span class="project-time">Side Business</span>
             </div>
             <p class="project-summary">
-              As a personal service, I handle the full lifecycle myself, from Flutter development and store release to asset delivery and deployment automation.
+              As a personal service, I handle Flutter development, store release, asset delivery, and deployment automation myself.
             </p>
             <ul class="impact-list">
             <li>Built ~30 Flutter apps published on Google Play Store; peak DAU ~3,000 / average ~800</li>
-            <li>Automated deployment pipeline: new app from concept to store release in ~30 minutes</li>
+            <li>Used templates and deployment automation to reduce new app release preparation to ~30 minutes</li>
             <li>Migrated image delivery/storage to Cloudflare R2</li>
             </ul>
             <p class="stack"><strong>Tech</strong>: Flutter, Firebase, Cloudflare R2, Google Play Store</p>
@@ -359,7 +355,7 @@
             <p class="panel-sub-label">Awards</p>
             <ul>
               <li>
-                Java의 정석 (Nam Koong-sung) DevCamp Cohort 1 — Java Portfolio Team Project, Best Award · 1st Place
+                Java의 정석 (Nam Koong-sung) DevCamp Cohort 1 — Java Portfolio Team Project, Grand Prize · 1st Place
                 <span class="cert-meta">KRW 3,000,000 prize · Aug–Sep 2022</span>
               </li>
             </ul>
@@ -367,7 +363,7 @@
           <article class="panel">
             <h3>Education</h3>
             <ul>
-              <li>Kangwon National University, Energy and Resources Engineering (<time datetime="2016-03">Mar 2016</time> - <time datetime="2021-05">May 2021</time>)</li>
+              <li>Kangwon National University, Energy and Resources Engineering, attended (<time datetime="2016-03">Mar 2016</time> - <time datetime="2021-05">May 2021</time>)</li>
               <li>Java Backend Web Developer Course (<time datetime="2022-02">Feb 2022</time> - <time datetime="2022-07">Jul 2022</time>)</li>
             </ul>
           </article>
@@ -377,7 +373,7 @@
       <section class="section final-contact">
         <h2>Get in Touch</h2>
         <p>
-          Interested in backend roles where integration design and operational reliability matter.
+          Interested in backend roles where enterprise integration and operational issue handling matter.
         </p>
         <div class="cta-links">
           <a class="cta-link primary" href="mailto:pgrrr119@gmail.com">Email</a>
@@ -400,8 +396,8 @@
       </button>
       <button
         class="float-btn download-btn"
-        title="Download PDF"
-        aria-label="Download PDF"
+        title="Download web PDF"
+        aria-label="Download web PDF"
       >
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
           <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
@@ -498,7 +494,7 @@
           );
 
           await generatePDF();
-          showNotification("PDF download started.");
+          showNotification("Web PDF download started.");
         } catch (error) {
           console.error(error);
           showNotification("PDF generation failed. Please retry.");
