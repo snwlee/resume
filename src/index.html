@@ -24,7 +24,6 @@
     <meta property="og:locale" content="ko_KR" />
 
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:creator" content="" />
     <meta name="twitter:url" content="https://snwlee.github.io/resume" />
     <meta name="twitter:title" content="이력서 - 이선우" />
     <meta
@@ -42,6 +41,7 @@
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
     />
     <link rel="icon" type="image/png" href="./favicon.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8/normalize.css" />
     <link rel="stylesheet" href="./main.css" />
   </head>
 
@@ -350,7 +350,7 @@
         <div class="experience-body">
           <div class="project-card">
             <div class="project-head">
-              <h4>배경화면 앱 운영</h4>
+              <h3>배경화면 앱 운영</h3>
               <span class="project-time">개인 서비스</span>
             </div>
             <p class="project-summary">
@@ -553,7 +553,6 @@
     <div class="floating-buttons">
       <button
         class="float-btn share-btn"
-        onclick="copyLink()"
         title="링크 복사"
         aria-label="링크 복사"
       >
@@ -565,7 +564,6 @@
       </button>
       <button
         class="float-btn download-btn"
-        onclick="downloadPDF()"
         title="PDF 다운로드"
         aria-label="PDF 다운로드"
       >
@@ -706,6 +704,9 @@
 
         pdf.save(PDF_FILE_NAME);
       }
+
+      document.querySelector(".share-btn").addEventListener("click", copyLink);
+      document.querySelector(".download-btn").addEventListener("click", downloadPDF);
     </script>
   </body>
 </html>
