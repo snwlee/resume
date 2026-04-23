@@ -60,14 +60,11 @@
           <div>
             <h1>Sunwoo Lee</h1>
             <p class="hero-summary">
-              For three years I have built the integration backend that connects each
-              customer's unique identity systems, organization data, and messaging
-              infrastructure into a single product. Beyond wiring integrations, I make
-              it a point to spot recurring inefficiencies and failure risks during
-              operations — and resolve them through automation or structural improvement.
-              I am currently designing workflow automation and evaluation harnesses in an
-              AI task force, while keeping a product-operations perspective by running
-              ~30 apps myself.
+              Eliminating repetition through automation is how I work — I have designed
+              and operated pipelines ranging from CI/CD tooling and patch-deployment
+              chatbots to autonomous issue-analysis systems. I am currently implementing
+              an AI-driven pipeline that handles issue analysis, code modification, and
+              build end-to-end.
             </p>
             <ul class="key-points">
               <li>3+ years of backend development with Java 21, Spring Boot, and MyBatis</li>
@@ -124,12 +121,12 @@
             <p>Worked on SAML-based SSO, metadata lifecycle handling, logout flows, and access-control related issues.</p>
           </article>
           <article class="strength-card">
-            <h3>Operational Troubleshooting</h3>
-            <p>Comfortable reproducing incidents in customer environments and shipping production-facing fixes quickly.</p>
+            <h3>Workflow Automation</h3>
+            <p>From CI/CD to deployment pipelines to issue processing — when I spot repetition, I automate it.</p>
           </article>
           <article class="strength-card">
-            <h3>Builder Mindset</h3>
-            <p>Keep building through AI workflow automation and a small app with real users and revenue.</p>
+            <h3>AI Pipeline Design</h3>
+            <p>Designing an autonomous pipeline where AI handles issue analysis, code modification, and builds end-to-end.</p>
           </article>
         </div>
       </section>
@@ -202,18 +199,17 @@
 
             <div class="project-card">
               <div class="project-head">
-                <h4>AI Task Force · Workflow Automation / Evaluation Harness</h4>
+                <h4>Autonomous Dev Pipeline / AI Issue Automation</h4>
                 <span class="project-time">Ongoing</span>
               </div>
               <p class="project-summary">
-                Participating in an internal AI task force to structure workflows for automation and to build validation harnesses.
+                Designing and building an AI-driven pipeline that autonomously handles issue analysis, code modification, and build — the developer only reviews and approves the plan.
               </p>
               <ul class="impact-list">
-                <li>Designed input-processing-validation flows for repetitive tasks</li>
-                <li>Built evaluation / validation harnesses for automation outputs</li>
-                <li>Reviewed AI automation from an operational adoption perspective</li>
+                <li>Built a SQLite DB of 25,633 issues + 131,874 comments + 15,628 commits (201 MB) as the training and context foundation for AI issue analysis (CustomWorkflow)</li>
+                <li>Phase 1 complete: autonomous pipeline covering issue analysis → plan validation → code modification → build; developer approves plan only</li>
               </ul>
-              <p class="stack"><strong>Focus</strong>: AI Workflow Automation, Evaluation Harness, Team Productivity</p>
+              <p class="stack"><strong>Focus</strong>: AI Workflow Automation, Autonomous Pipeline, SQLite, Claude Code</p>
             </div>
 
             <div class="project-card">
@@ -229,7 +225,7 @@
                 <li>Led SVN → Git migration: established branch strategy, commit conventions, and team collaboration standards</li>
                 <li>Automated repetitive steps in JDK 8 → 21 upgrades, making the process reusable across projects</li>
                 <li>Automated sensitive property migration to KMS and shared as a reusable tool with the team</li>
-                <li>Built a project-context-aware chatbot/CLI for field engineers using Notebook LM</li>
+                <li>Built a TypeScript CLI (SupportGPT) that auto-collects Git history, Redmine issues, and source code per customer patch — feeds into a NotebookLM chatbot for field engineers</li>
                 <li>Configured and managed Docker-based test servers to replicate per-customer DBMS environments (Oracle, MSSQL, PostgreSQL, MySQL, MariaDB)</li>
               </ul>
               <p class="stack"><strong>Focus</strong>: CI/CD, Git Migration, JDK Upgrade Automation, KMS, Developer Productivity</p>
@@ -269,14 +265,15 @@
               <h4>Wallpaper App Operation</h4>
               <span class="project-time">Side Business</span>
             </div>
-            <p class="project-summary">Directly develop and operate a wallpaper app with real users and revenue.</p>
+            <p class="project-summary">Fully automated the entire lifecycle — from Flutter development and store release to content operations and monetization.</p>
             <ul class="impact-list">
               <li>Built ~30 Flutter apps published on Google Play Store; peak DAU ~3,000 / average ~800</li>
+              <li>Automated deployment pipeline: new app from concept to store release in ~30 minutes</li>
               <li>Maintained roughly KRW 500,000 in monthly revenue</li>
               <li>Migrated image delivery/storage to Cloudflare R2</li>
-              <li>Improved maintainability and delivery structure from an operations perspective</li>
+              <li>Running an n8n pipeline that auto-collects and summarizes AI news and posts regularly to Threads</li>
             </ul>
-            <p class="stack"><strong>Tech</strong>: Flutter, Firebase, Cloudflare R2, Google Play Store</p>
+            <p class="stack"><strong>Tech</strong>: Flutter, Firebase, Cloudflare R2, Google Play Store, n8n</p>
           </div>
         </div>
       </section>
@@ -401,7 +398,7 @@
       <section class="section final-contact">
         <h2>Contact</h2>
         <p>
-          I want to contribute as a backend engineer who combines enterprise integration experience with real product operations and automation-friendly thinking.
+          I want to contribute as a backend engineer whose instinct is to eliminate repetition through automation — backed by enterprise integration depth and real product operations experience.
         </p>
         <div class="cta-links">
           <a class="cta-link primary" href="mailto:pgrrr119@gmail.com">Email</a>
