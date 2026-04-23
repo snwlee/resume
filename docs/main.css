@@ -17,8 +17,8 @@
   --accent-soft-strong: rgba(15, 118, 110, 0.18);
   --chip-bg: rgba(255, 255, 255, 0.88);
   --chip-border: rgba(15, 118, 110, 0.16);
-  --shadow: 0 24px 70px rgba(14, 30, 43, 0.08);
-  --shadow-soft: 0 14px 34px rgba(14, 30, 43, 0.06);
+  --shadow: 0 6px 24px rgba(14, 30, 43, 0.07);
+  --shadow-soft: 0 3px 12px rgba(14, 30, 43, 0.05);
   --radius-xl: 28px;
   --radius-lg: 20px;
   --radius-md: 16px;
@@ -46,10 +46,8 @@ body {
   color: var(--text);
   line-height: 1.68;
   background:
-    radial-gradient(circle at 0% 0%, rgba(20, 184, 166, 0.12) 0%, rgba(20, 184, 166, 0) 32%),
-    radial-gradient(circle at 100% 0%, rgba(59, 130, 246, 0.11) 0%, rgba(59, 130, 246, 0) 30%),
-    radial-gradient(circle at 50% 100%, rgba(245, 158, 11, 0.08) 0%, rgba(245, 158, 11, 0) 26%),
-    linear-gradient(180deg, #f8fbfc 0%, var(--bg) 50%, #eef3f5 100%);
+    radial-gradient(ellipse at 0% 0%, rgba(20, 184, 166, 0.08) 0%, transparent 42%),
+    linear-gradient(160deg, #f6f9fa 0%, var(--bg) 100%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -66,11 +64,7 @@ body::after {
 }
 
 body::before {
-  background-image:
-    linear-gradient(rgba(15, 118, 110, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(15, 118, 110, 0.035) 1px, transparent 1px);
-  background-size: 40px 40px;
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), transparent 72%);
+  display: none;
 }
 
 body::after {
@@ -117,7 +111,7 @@ ul {
 .resume {
   position: relative;
   z-index: 1;
-  width: min(1160px, calc(100% - 2.5rem));
+  width: min(960px, calc(100% - 2.5rem));
   margin: 2.25rem auto 0;
   display: grid;
   gap: 1.15rem;
@@ -153,14 +147,7 @@ ul {
 }
 
 .hero::after {
-  content: "";
-  position: absolute;
-  inset: auto -8% -22% auto;
-  width: 340px;
-  height: 340px;
-  border-radius: 999px;
-  background: radial-gradient(circle, rgba(15, 118, 110, 0.11) 0%, rgba(15, 118, 110, 0) 72%);
-  pointer-events: none;
+  display: none;
 }
 
 .section:nth-of-type(2) {
@@ -418,9 +405,7 @@ h1 {
 }
 
 .strength-card::before,
-.project-card::before,
-.skill-group::before,
-.panel::before {
+.project-card::before {
   content: "";
   position: absolute;
   left: 0;
