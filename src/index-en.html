@@ -60,17 +60,18 @@
           <div>
             <h1>Sunwoo Lee</h1>
             <p class="hero-summary">
-              Eliminating repetition through automation is how I work — I have designed
-              and operated pipelines ranging from CI/CD tooling and patch-deployment
-              chatbots to autonomous issue-analysis systems. I am currently implementing
-              an AI-driven pipeline that handles issue analysis, code modification, and
-              build end-to-end.
+              I have spent the last 3+ years building enterprise backend systems that
+              connect heterogeneous identity, directory, and messaging environments.
+              My strongest work has been in production-critical areas: HR sync batch
+              processing, SAML SSO/SLO across multiple IdPs, and notification recovery
+              flows after deadlocks and delivery failures. I also reduce repetitive
+              work through internal automation that improves team productivity.
             </p>
             <ul class="key-points">
               <li>3+ years of backend development with Java 21, Spring Boot, and MyBatis</li>
-              <li>Hands-on experience with LDAP, REST API, DB, File, MQ, UDP, and SAML 2.0</li>
-              <li>Built autonomous dev pipeline phase 1 with AI issue analysis (CustomWorkflow)</li>
-              <li>Operate ~30 Flutter apps · peak DAU ~3,000</li>
+              <li>Improved performance and operational stability of Spring Batch-based HR sync jobs</li>
+              <li>Implemented SAML SSO / SLO / logout flows across Okta, OneLogin, and MS Entra ID environments</li>
+              <li>Resolved deadlocks, defined retry policies, and built DLQ-based recovery flows for notification integrations</li>
             </ul>
             <div class="chip-row">
               <span class="chip">Java 21</span>
@@ -85,16 +86,16 @@
             <h2>Quick Info</h2>
             <dl class="quick-list">
               <div>
+                <dt>Experience</dt>
+                <dd>3+ years in enterprise integration backend</dd>
+              </div>
+              <div>
                 <dt>Location</dt>
                 <dd>Seoul, South Korea</dd>
               </div>
               <div>
-                <dt>Target Roles</dt>
-                <dd>Backend Engineer · Platform / Integration Backend · AI Automation-Adjacent Backend</dd>
-              </div>
-              <div>
-                <dt>Keywords</dt>
-                <dd>Enterprise Integration · Identity & Access · Operational Automation · Product Operations</dd>
+                <dt>Focus</dt>
+                <dd>Enterprise Integration · Identity & Access · Operational Reliability</dd>
               </div>
             </dl>
             <div class="contact-links">
@@ -110,7 +111,7 @@
       <section class="section">
         <div class="section-head">
           <h2>Core Strengths</h2>
-          <p>I translate customer-specific constraints into maintainable backend systems.</p>
+          <p>Most of my work has been turning customer-specific exceptions into product rules and operational guardrails.</p>
         </div>
         <div class="strength-grid">
           <article class="strength-card">
@@ -119,15 +120,15 @@
           </article>
           <article class="strength-card">
             <h3>Identity & Access</h3>
-            <p>Worked on SAML-based SSO, metadata lifecycle handling, logout flows, and access-control related issues.</p>
+            <p>Worked on SAML-based SSO, metadata lifecycle handling, SSO/SLO flows, and access-control related issues.</p>
           </article>
           <article class="strength-card">
-            <h3>Workflow Automation</h3>
-            <p>From build pipelines to patch deployment bots to KMS automation — when I find inefficiency, I replace it with structured automation.</p>
+            <h3>Operational Reliability</h3>
+            <p>Improved fragile areas such as batch jobs, notification pipelines, and session handling with safeguards, retries, and recovery flows.</p>
           </article>
           <article class="strength-card">
-            <h3>AI Pipeline Design</h3>
-            <p>Designing and building an AI autonomous dev pipeline grounded in a 25,633-issue · 15,628-commit SQLite knowledge base.</p>
+            <h3>Developer Automation</h3>
+            <p>I reduce repetitive work with scripts and internal tooling to improve delivery speed and operational efficiency.</p>
           </article>
         </div>
       </section>
@@ -157,7 +158,7 @@
               <ul class="impact-list">
                 <li>Absorbed diverse customer directory systems (LDAP, REST, DB, File, MQ, UDP across 5 DB engines) via connector abstraction, making the product resilient to customer environment changes</li>
                 <li>Designed a 3-layer data safety guard to prevent bulk HR data errors — independently controlling reduction rate, absolute minimum, and resignation thresholds</li>
-                <li>Maintained and improved Spring Batch-based HR synchronization jobs</li>
+                <li>Improved bottlenecks and processing flows in Spring Batch-based HR synchronization jobs, raising performance and operational stability</li>
                 <li>Refactored async flows from Future-based logic to CompletableFuture, improving readability and maintainability</li>
               </ul>
               <p class="stack"><strong>Tech</strong>: Java 21, Spring Boot, Spring Batch, MyBatis, Oracle, MSSQL, PostgreSQL, MySQL, MariaDB, LDAP, REST API, IBM MQ, UDP</p>
@@ -176,7 +177,7 @@
               <ul class="impact-list">
                 <li>Designed and operated a SAML SP structure to accommodate per-customer IdP differences (Okta, OneLogin, MS Entra ID) within a single product</li>
                 <li>Organized multi-IdP support configuration and operational structure</li>
-                <li>Implemented SLS/SLO-based session invalidation flows</li>
+                <li>Implemented SAML SLO-based IdP logout and session invalidation flows, handling operational differences across IdPs</li>
                 <li>Investigated and resolved login and permission-related integration issues across customer environments</li>
               </ul>
               <p class="stack"><strong>Tech</strong>: Spring Boot, SAML 2.0, Okta, OneLogin, Access Control</p>
@@ -193,7 +194,8 @@
               </p>
               <ul class="impact-list">
                 <li>Integrated 6 notification channels: Slack, KakaoTalk, Email, SMS, MQ, and UDP</li>
-                <li>Implemented REST API-based integration with customer internal systems</li>
+                <li>Analyzed and resolved deadlocks in notification processing flows, improving delivery stability</li>
+                <li>Defined retry policies by failure type and routed failed notifications to a DLQ, enabling controlled recovery and reprocessing</li>
                 <li>Handled per-customer notification customization beyond standard channels — channel selection, message format, and delivery conditions</li>
               </ul>
               <p class="stack"><strong>Tech</strong>: Spring Boot, REST API, IBM MQ, UDP</p>
@@ -201,93 +203,37 @@
 
             <div class="project-card">
               <div class="project-head">
-                <h4>AWS Bedrock Usage Monitoring System</h4>
-                <span class="project-time"
-                  ><time datetime="2026-01">Jan 2026</time> –
-                  <time datetime="2026-04">Apr 2026</time></span
-                >
+                <h4>Internal Automation</h4>
+                <span class="project-time">Internal initiative</span>
               </div>
               <p class="project-summary">
-                Built a real-time monitoring pipeline for AWS Bedrock (Claude Code) usage and
-                prompts across the engineering team during the company's early AX transformation.
+                Designed internal automation pipelines and tooling to improve team productivity and operational visibility.
               </p>
               <ul class="impact-list">
-                <li>Designed Kinesis Data Firehose → S3 → Glue → Athena pipeline to collect and analyze Bedrock invocation logs</li>
-                <li>Configured real-time usage metrics via CloudWatch Logs &amp; CloudTrail with SNS alerting</li>
-                <li>Usage pattern data informed the Pro/Max subscription tier allocation across the engineering team</li>
+                <li>Built AWS Bedrock usage monitoring with Kinesis Data Firehose → S3 → Glue → Athena plus CloudWatch, CloudTrail, and SNS alerting</li>
+                <li>Built a SQLite knowledge base from 25k+ issues, 130k+ comments, and 15k+ commits, then implemented the first version of an autonomous flow from issue analysis to plan generation, code change, and build</li>
+                <li>Built a TypeScript CLI that assembles per-deployment context into customer-specific NotebookLM chatbots, and operated an internal AI newsletter pipeline for the engineering team</li>
               </ul>
               <p class="stack">
-                <strong>Tech</strong>: AWS Bedrock, Kinesis Data Firehose, CloudWatch Logs, CloudTrail, S3, Glue, Athena, OpenSearch, SNS
+                <strong>Tech</strong>: AWS Bedrock, Kinesis Data Firehose, CloudWatch, CloudTrail, S3, Glue, Athena, SQLite, Python, TypeScript, n8n, Claude Code
               </p>
             </div>
 
             <div class="project-card">
               <div class="project-head">
-                <h4>AI Dev Workflow Automation / Autonomous Dev Pipeline</h4>
-                <span class="project-time"><time datetime="2026-03">Mar 2026</time> - Present</span>
-              </div>
-              <p class="project-summary">
-                Designing and building an AI-driven pipeline that autonomously handles issue analysis, code modification, and build — the developer only reviews and approves the plan.
-              </p>
-              <ul class="impact-list">
-                <li>Built a SQLite DB of 25,633 issues + 131,874 comments + 15,628 commits (201 MB) as the training and context foundation for AI issue analysis (CustomWorkflow)</li>
-                <li>Phase 1 complete: autonomous pipeline covering issue analysis → plan validation → code modification → build; developer approves plan only</li>
-              </ul>
-              <p class="stack"><strong>Focus</strong>: AI Workflow Automation, Autonomous Pipeline, SQLite, Claude Code</p>
-            </div>
-
-            <div class="project-card">
-              <div class="project-head">
-                <h4>AI Internal Tooling</h4>
+                <h4>Dev Environment Standardization</h4>
                 <span class="project-time">Internal initiative</span>
               </div>
               <p class="project-summary">
-                Applied AI directly to team workflows to reduce repetitive work and automate knowledge sharing.
+                Automated and standardized recurring engineering tasks across security checks, environment upgrades, and test infrastructure.
               </p>
               <ul class="impact-list">
-                <li><strong>Patch Deployment AI Chatbot</strong> — TypeScript CLI (SupportGPT) that auto-collects Git commits, Redmine issues, and source code per deployment to generate per-customer NotebookLM chatbots</li>
-                <li><strong>Internal AI Newsletter Pipeline</strong> — Auto-collects from Threads, X, GeekNews → filters for Claude/NotebookLM adoption tips and AI security → weekly Monday email digest to engineering team</li>
+                <li>Integrated Sparrow into the CI/CD pipeline, removing manual security scan runs per project</li>
+                <li>Led SVN → Git migration, establishing branch strategy and commit conventions for the team</li>
+                <li>Automated JDK 8 → 21 upgrades and sensitive property migration to KMS in reusable form</li>
+                <li>Configured Docker-based Oracle, MSSQL, PostgreSQL, MySQL, and MariaDB test environments</li>
               </ul>
-              <p class="stack"><strong>Tech</strong>: TypeScript, NotebookLM, n8n, Claude</p>
-            </div>
-
-            <div class="project-card">
-              <div class="project-head">
-                <h4>Dev Environment Improvements</h4>
-                <span class="project-time">Internal initiative</span>
-              </div>
-              <p class="project-summary">
-                Identified team-wide inefficiencies across legacy migrations, security checks, and infrastructure — and led automation and standardization efforts.
-              </p>
-              <ul class="impact-list">
-                <li><strong>Security Scan Automation</strong> — Integrated Sparrow into CI/CD pipeline, eliminating per-project manual runs</li>
-                <li><strong>SVN → Git Migration</strong> — Led migration: established branch strategy, commit conventions, and team collaboration standards</li>
-                <li><strong>JDK 8 → 21 Upgrade</strong> — Automated repetitive upgrade steps, making the process reusable across all projects</li>
-                <li><strong>Secrets → KMS</strong> — Automated sensitive property migration to KMS and shared as a reusable tool with the team</li>
-                <li><strong>Multi-DBMS Test Environment</strong> — Configured Docker-based servers replicating Oracle, MSSQL, PostgreSQL, MySQL, MariaDB environments</li>
-              </ul>
-              <p class="stack"><strong>Focus</strong>: CI/CD, Git Migration, JDK Upgrade Automation, KMS, Docker</p>
-            </div>
-          </div>
-        </article>
-
-        <article class="experience">
-          <div class="experience-meta">
-            <h3>Genewel</h3>
-            <span class="role">R&D Assistant</span>
-            <span class="period"><time datetime="2021-03">Mar 2021</time> - <time datetime="2021-09">Sep 2021</time></span>
-          </div>
-          <div class="experience-body">
-            <div class="project-card">
-              <div class="project-head">
-                <h4>UDI Tracking System Operations</h4>
-                <span class="project-time"><time datetime="2021-03">Mar 2021</time> - <time datetime="2021-09">Sep 2021</time></span>
-              </div>
-              <p class="project-summary">Supported operations of a UDI tracking management system in a medical device context.</p>
-              <ul class="impact-list">
-                <li>Supported day-to-day operations of the UDI tracking system</li>
-                <li>Assisted research work and inventory management</li>
-              </ul>
+              <p class="stack"><strong>Focus</strong>: CI/CD, Git Migration, Java Upgrade Automation, KMS, Docker</p>
             </div>
           </div>
         </article>
@@ -303,12 +249,13 @@
               <h3>Wallpaper App Operation</h3>
               <span class="project-time">Side Business</span>
             </div>
-            <p class="project-summary">Fully automated the entire lifecycle — from Flutter development and store release to content operations and monetization.</p>
+            <p class="project-summary">
+              As a personal service, I handle the full lifecycle myself, from Flutter development and store release to asset delivery and deployment automation.
+            </p>
             <ul class="impact-list">
-              <li>Built ~30 Flutter apps published on Google Play Store; peak DAU ~3,000 / average ~800</li>
-              <li>Automated deployment pipeline: new app from concept to store release in ~30 minutes</li>
-              <li>~KRW 500,000/month in revenue, fully automated operations</li>
-              <li>Migrated image delivery/storage to Cloudflare R2</li>
+            <li>Built ~30 Flutter apps published on Google Play Store; peak DAU ~3,000 / average ~800</li>
+            <li>Automated deployment pipeline: new app from concept to store release in ~30 minutes</li>
+            <li>Migrated image delivery/storage to Cloudflare R2</li>
             </ul>
             <p class="stack"><strong>Tech</strong>: Flutter, Firebase, Cloudflare R2, Google Play Store</p>
           </div>
@@ -347,8 +294,8 @@
               <span class="tag">SAML 2.0</span>
               <span class="tag">Okta</span>
               <span class="tag">OneLogin</span>
-              <span class="tag">SSO</span>
-              <span class="tag">SLS/SLO</span>
+              <span class="tag">MS Entra ID</span>
+              <span class="tag">SSO/SLO</span>
               <span class="tag">Access Control</span>
             </div>
           </article>
@@ -356,12 +303,10 @@
             <h3>Cloud & Infra</h3>
             <div class="tag-list">
               <span class="tag">AWS</span>
-              <span class="tag">AWS Bedrock</span>
               <span class="tag">S3</span>
               <span class="tag">CloudWatch</span>
-              <span class="tag">Kinesis</span>
+              <span class="tag">Glue</span>
               <span class="tag">Athena</span>
-              <span class="tag">OpenSearch</span>
               <span class="tag">Docker</span>
               <span class="tag">Cloudflare R2</span>
             </div>
@@ -377,26 +322,13 @@
             </div>
           </article>
           <article class="skill-group">
-            <h3>AI & Automation</h3>
+            <h3>Automation</h3>
             <div class="tag-list">
               <span class="tag">Claude Code</span>
-              <span class="tag">Cursor</span>
-              <span class="tag">Windsurf</span>
-              <span class="tag">Antigravity</span>
-              <span class="tag">AWS Kiro</span>
-              <span class="tag">Codex</span>
-              <span class="tag">Gemini CLI</span>
+              <span class="tag">Python</span>
+              <span class="tag">TypeScript</span>
               <span class="tag">n8n</span>
-              <span class="tag">NotebookLM</span>
               <span class="tag">SQLite</span>
-            </div>
-          </article>
-          <article class="skill-group">
-            <h3>Mobile</h3>
-            <div class="tag-list">
-              <span class="tag">Flutter</span>
-              <span class="tag">Firebase</span>
-              <span class="tag">Google Play</span>
             </div>
           </article>
         </div>
@@ -433,10 +365,8 @@
             </ul>
           </article>
           <article class="panel">
-            <h3>Links & Education</h3>
+            <h3>Education</h3>
             <ul>
-              <li>Blog: <a href="https://velog.io/@iseon_u" target="_blank" rel="noopener noreferrer">velog.io/@iseon_u</a></li>
-              <li>GitHub: <a href="https://github.com/snwlee" target="_blank" rel="noopener noreferrer">github.com/snwlee</a></li>
               <li>Kangwon National University, Energy and Resources Engineering (<time datetime="2016-03">Mar 2016</time> - <time datetime="2021-05">May 2021</time>)</li>
               <li>Java Backend Web Developer Course (<time datetime="2022-02">Feb 2022</time> - <time datetime="2022-07">Jul 2022</time>)</li>
             </ul>
@@ -445,15 +375,13 @@
       </section>
 
       <section class="section final-contact">
-        <h2>Contact</h2>
+        <h2>Get in Touch</h2>
         <p>
-          3 years of enterprise integration and identity experience, combined with hands-on automation and AI pipeline work — ready to contribute from day one.
+          Interested in backend roles where integration design and operational reliability matter.
         </p>
         <div class="cta-links">
           <a class="cta-link primary" href="mailto:pgrrr119@gmail.com">Email</a>
           <a class="cta-link" href="https://github.com/snwlee" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a class="cta-link" href="https://velog.io/@iseon_u" target="_blank" rel="noopener noreferrer">Blog</a>
-          <a class="cta-link" href="./index.html">Korean Resume</a>
         </div>
       </section>
     </main>
