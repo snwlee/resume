@@ -28,7 +28,7 @@
   --text-xs: 0.72rem;
   --text-sm: 0.78rem;
   --text-sm-plus: 0.82rem;
-  --text-base: 0.94rem;
+  --text-base: 1rem;
   --text-md: 1rem;
   --text-subhead: 1.08rem;
   --text-lg: 1.36rem;
@@ -317,7 +317,7 @@ h1 {
 }
 
 .profile-card h2 {
-  font-size: var(--text-md);
+  font-size: var(--text-subhead);
   font-family: "Space Grotesk", "Pretendard", sans-serif;
   color: var(--text);
   margin-bottom: 0.95rem;
@@ -369,6 +369,10 @@ h1 {
   text-decoration: none;
   background: rgba(248, 251, 252, 0.92);
   color: var(--text-soft);
+  min-height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-links a:hover {
@@ -433,7 +437,7 @@ h1 {
 .strength-card h3,
 .skill-group h3,
 .panel h3 {
-  font-size: var(--text-base);
+  font-size: var(--text-subhead);
   font-family: "Space Grotesk", "Pretendard", sans-serif;
   letter-spacing: 0.01em;
   margin-bottom: 0.48rem;
@@ -674,7 +678,7 @@ h1 {
   background: rgba(249, 252, 251, 0.92);
   color: var(--text-soft);
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
 .cta-link:hover {
@@ -754,7 +758,7 @@ h1 {
   box-shadow: 0 14px 24px rgba(15, 23, 42, 0.28);
   opacity: 0;
   transform: translateX(18px);
-  transition: all 0.25s ease;
+  transition: opacity 0.25s ease, transform 0.25s ease;
   z-index: 1001;
 }
 
