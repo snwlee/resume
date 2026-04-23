@@ -237,22 +237,35 @@
 
             <div class="project-card">
               <div class="project-head">
-                <h4>Dev Environment Improvements & Internal Tooling</h4>
+                <h4>AI Internal Tooling</h4>
                 <span class="project-time">Internal initiative</span>
               </div>
               <p class="project-summary">
-                Identified team-wide inefficiencies — repetitive tasks, legacy migrations, security checks — and led automation and standardization efforts.
+                Applied AI directly to team workflows to reduce repetitive work and automate knowledge sharing.
               </p>
               <ul class="impact-list">
-                <li>Built a TypeScript CLI (SupportGPT) that auto-collects Git history, Redmine issues, and source code per customer patch — feeds into a NotebookLM chatbot for field engineers</li>
-                <li>Integrated Sparrow security scanning into CI/CD pipeline, eliminating per-project manual runs</li>
-                <li>Led SVN → Git migration: established branch strategy, commit conventions, and team collaboration standards</li>
-                <li>Automated repetitive steps in JDK 8 → 21 upgrades, making the process reusable across projects</li>
-                <li>Automated sensitive property migration to KMS and shared as a reusable tool with the team</li>
-                <li>Configured and managed Docker-based test servers to replicate per-customer DBMS environments (Oracle, MSSQL, PostgreSQL, MySQL, MariaDB)</li>
-                <li>Built and operates a weekly Monday pipeline that auto-collects AI news from Threads, X, and GeekNews — filters for internal tool adoption (Claude, NotebookLM) and AI security topics — and delivers a curated digest to the engineering team</li>
+                <li><strong>Patch Deployment AI Chatbot</strong> — TypeScript CLI (SupportGPT) that auto-collects Git commits, Redmine issues, and source code per deployment to generate per-customer NotebookLM chatbots</li>
+                <li><strong>Internal AI Newsletter Pipeline</strong> — Auto-collects from Threads, X, GeekNews → filters for Claude/NotebookLM adoption tips and AI security → weekly Monday email digest to engineering team</li>
               </ul>
-              <p class="stack"><strong>Focus</strong>: CI/CD, Git Migration, JDK Upgrade Automation, KMS, Developer Productivity</p>
+              <p class="stack"><strong>Tech</strong>: TypeScript, NotebookLM, n8n, Claude</p>
+            </div>
+
+            <div class="project-card">
+              <div class="project-head">
+                <h4>Dev Environment Improvements</h4>
+                <span class="project-time">Internal initiative</span>
+              </div>
+              <p class="project-summary">
+                Identified team-wide inefficiencies across legacy migrations, security checks, and infrastructure — and led automation and standardization efforts.
+              </p>
+              <ul class="impact-list">
+                <li><strong>Security Scan Automation</strong> — Integrated Sparrow into CI/CD pipeline, eliminating per-project manual runs</li>
+                <li><strong>SVN → Git Migration</strong> — Led migration: established branch strategy, commit conventions, and team collaboration standards</li>
+                <li><strong>JDK 8 → 21 Upgrade</strong> — Automated repetitive upgrade steps, making the process reusable across all projects</li>
+                <li><strong>Secrets → KMS</strong> — Automated sensitive property migration to KMS and shared as a reusable tool with the team</li>
+                <li><strong>Multi-DBMS Test Environment</strong> — Configured Docker-based servers replicating Oracle, MSSQL, PostgreSQL, MySQL, MariaDB environments</li>
+              </ul>
+              <p class="stack"><strong>Focus</strong>: CI/CD, Git Migration, JDK Upgrade Automation, KMS, Docker</p>
             </div>
           </div>
         </article>

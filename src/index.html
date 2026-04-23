@@ -275,23 +275,38 @@
 
             <div class="project-card">
               <div class="project-head">
-                <h4>개발 환경 개선 & 내부 도구</h4>
+                <h4>AI 내부 도구</h4>
                 <span class="project-time">사내 주도</span>
               </div>
               <p class="project-summary">
-                반복 작업, 레거시 전환, 보안 점검 등 팀 차원의 비효율을 발견하고 자동화·표준화를 주도했습니다.
+                팀 업무에 AI를 직접 접목해 반복 작업을 줄이고 지식 공유를 자동화했습니다.
               </p>
               <ul class="impact-list">
-                <li>패치 배포 시 Git 커밋·Redmine 이슈·소스코드를 자동 수집해 고객사별 NotebookLM 챗봇을 생성하는 TypeScript CLI(SupportGPT) 개발</li>
-                <li>Sparrow 보안 점검을 CI/CD 파이프라인에 통합해 프로젝트별 수동 실행 작업 제거</li>
-                <li>SVN → Git 마이그레이션 주도: 브랜치 전략·커밋 규칙 정립 및 팀 협업 기준 재정립</li>
-                <li>JDK 8 → 21 전환 시 반복 작업을 자동화 처리해 전체 프로젝트 적용 효율화</li>
-                <li>민감정보 프로퍼티를 KMS 기반으로 전환하는 작업 자동화 및 재사용 가능한 형태로 팀 공유</li>
-                <li>고객사별 다중 DBMS 환경(Oracle·MSSQL·PostgreSQL·MySQL·MariaDB) 재현을 위한 Docker 기반 테스트 서버 구성·관리</li>
-                <li>Threads·X·GeekNews에서 AI 뉴스를 자동 수집하고, 사내 도입 툴(Claude·NotebookLM) 활용 정보 및 AI 보안 이슈 중심으로 필터링해 매주 월요일 개발 부문 전체에 메일링하는 파이프라인 구축·운영</li>
+                <li><strong>패치 배포 AI 챗봇</strong> — 배포 시 Git·Redmine·소스코드를 자동 수집해 고객사별 NotebookLM 챗봇을 생성하는 TypeScript CLI(SupportGPT) 개발</li>
+                <li><strong>사내 AI 뉴스 파이프라인</strong> — Threads·X·GeekNews 자동 수집 → 사내 도입 툴(Claude·NotebookLM) 활용 정보 및 AI 보안 이슈 중심 필터링 → 매주 월요일 개발 부문 메일링</li>
               </ul>
               <p class="stack">
-                <strong>Focus</strong>: CI/CD, Git Migration, JDK Upgrade Automation, KMS, Developer Productivity
+                <strong>Tech</strong>: TypeScript, NotebookLM, n8n, Claude
+              </p>
+            </div>
+
+            <div class="project-card">
+              <div class="project-head">
+                <h4>개발 환경 개선</h4>
+                <span class="project-time">사내 주도</span>
+              </div>
+              <p class="project-summary">
+                레거시 전환, 보안 점검, 인프라 표준화 등 팀 차원의 비효율을 발견하고 자동화·표준화를 주도했습니다.
+              </p>
+              <ul class="impact-list">
+                <li><strong>보안 점검 자동화</strong> — Sparrow를 CI/CD 파이프라인에 통합해 프로젝트별 수동 실행 작업 제거</li>
+                <li><strong>SVN → Git 전환</strong> — 마이그레이션 주도: 브랜치 전략·커밋 규칙 정립 및 팀 협업 기준 재정립</li>
+                <li><strong>JDK 8 → 21 전환</strong> — 반복 작업을 자동화 처리해 전체 프로젝트 적용 효율화</li>
+                <li><strong>민감정보 KMS 암호화</strong> — 프로퍼티 전환 자동화 및 재사용 가능한 형태로 팀 공유</li>
+                <li><strong>다중 DBMS 테스트 환경</strong> — Docker 기반 Oracle·MSSQL·PostgreSQL·MySQL·MariaDB 환경 구성·관리</li>
+              </ul>
+              <p class="stack">
+                <strong>Focus</strong>: CI/CD, Git Migration, JDK Upgrade Automation, KMS, Docker
               </p>
             </div>
           </div>
