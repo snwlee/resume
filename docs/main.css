@@ -485,6 +485,26 @@ h1 {
   font-family: "Space Grotesk", "Pretendard", sans-serif;
 }
 
+.company-desc {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-top: 0.3rem;
+  line-height: 1.42;
+}
+
+.panel-sub-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-family: "Space Grotesk", "Pretendard", sans-serif;
+  margin-top: 0.72rem;
+  padding-top: 0.72rem;
+  border-top: 1px dashed rgba(126, 149, 168, 0.32);
+  margin-bottom: 0.38rem;
+}
+
 .experience-body {
   display: grid;
   gap: 0.82rem;

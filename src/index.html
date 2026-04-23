@@ -60,16 +60,16 @@
           <div>
             <h1>이선우</h1>
             <p class="hero-summary">
-              엔터프라이즈 환경의 연동, 인증(SSO), 알림 도메인을 중심으로 백엔드를 개발해 온
-              엔지니어입니다. 솔루션 회사에서 고객사 시스템과 자사 제품을 연결하는 업무를 맡아
-              왔고, 최근에는 AI TF에서 팀 업무 자동화와 검증 하네스 구성을 진행하고 있습니다.
-              개인적으로는 실제 사용자가 있는 배경화면 앱을 운영하며 서비스 운영, 스토리지
-              구조 개선, 수익화 경험도 함께 쌓고 있습니다.
+              고객사마다 다른 인증 체계, 조직 데이터, 메시징 인프라를 하나의 제품으로 연결하는
+              통합 백엔드를 3년간 개발해 왔습니다. 연동 구현에 그치지 않고, 운영 중 반복되는
+              비효율과 사고 위험을 먼저 발견하고 자동화·구조 개선으로 해결하는 것을 중요하게
+              생각합니다. 현재는 AI TF에서 업무 자동화 흐름과 검증 구조를 직접 설계하고 있으며,
+              약 30개 앱을 직접 운영하며 실서비스 관점도 유지합니다.
             </p>
             <ul class="key-points">
               <li>Java 21, Spring Boot, MyBatis 기반 엔터프라이즈 연동 백엔드 실무 3년+</li>
               <li>LDAP, REST API, DB, File, MQ, UDP, SAML 2.0 기반 통합/인증 경험</li>
-              <li>AI 업무 자동화·검증 하네스 구성, DAU 약 500 앱 운영 및 Cloudflare R2 마이그레이션 경험</li>
+              <li>AI 업무 자동화·검증 하네스 구성, 약 30개 앱 운영(최대 DAU 3,000) 및 Cloudflare R2 마이그레이션 경험</li>
             </ul>
             <div class="chip-row">
               <span class="chip">Java 21</span>
@@ -163,6 +163,7 @@
           <div class="experience-meta">
             <h3>넷앤드</h3>
             <span class="role">Backend Developer</span>
+            <span class="company-desc">엔터프라이즈 네트워크 보안 접근제어 솔루션(HIWARE) 전문 기업</span>
             <span class="period"
               ><time datetime="2023-06">2023.06</time> - 현재</span
             >
@@ -176,14 +177,14 @@
                 >
               </div>
               <p class="project-summary">
-                조직/인사 데이터 동기화와 고객사 외부 시스템 연동을 담당하며, 제품과 고객 환경
-                사이의 차이를 흡수하는 백엔드 기능을 개발 및 운영했습니다.
+                고객사마다 다른 원장 시스템과 연동 방식을 제품 레벨에서 통일하고,
+                대량 인사 데이터 오처리 위험을 사전 차단하는 구조를 개발했습니다.
               </p>
               <ul class="impact-list">
-                <li>LDAP, REST API, DB(Oracle/MSSQL/PostgreSQL/MySQL/MariaDB), File, MQ, UDP 기반 연동 기능 구현</li>
-                <li>Spring Batch 기반 동기화 배치 유지보수 및 개선</li>
-                <li>Future 기반 비동기 로직을 CompletableFuture 중심 구조로 정리</li>
-                <li>고객사별 인터페이스 차이, 데이터 형식 차이, 운영 예외 케이스에 대응하며 통합 기능 운영</li>
+                <li>고객사 원장 시스템 다양성(LDAP·REST·DB·File·MQ·UDP, 5종 DB 엔진)을 커넥터 추상화로 흡수해 고객사 환경 변화에 유연하게 대응</li>
+                <li>대량 인사 데이터 오적용 사고 방지를 위한 3단계 안전 가드 설계 — 감소율·절대 최솟값·퇴사 임계값을 각각 독립 제어</li>
+                <li>Spring Batch 기반 인사 동기화 배치 유지보수 및 처리 흐름 개선</li>
+                <li>Future 기반 비동기 로직을 CompletableFuture 중심 구조로 리팩토링해 가독성·유지보수성 향상</li>
               </ul>
               <p class="stack">
                 <strong>Tech</strong>: Java 21, Spring Boot, Spring Batch, MyBatis, Oracle, MSSQL, PostgreSQL, MySQL, MariaDB, LDAP, REST API, IBM MQ, UDP
@@ -198,14 +199,14 @@
                 >
               </div>
               <p class="project-summary">
-                Okta, OneLogin 등 다양한 IdP를 연결하는 SAML 기반 SSO를 개발 및 운영했고,
-                인증 흐름과 접근 통제 연동 이슈를 제품 관점에서 다뤘습니다.
+                고객사마다 다른 IdP 환경(Okta, OneLogin, MS Entra ID)을 단일 제품으로 수용해야 했고,
+                SP 구조와 세션 파기 흐름을 직접 설계·운영했습니다.
               </p>
               <ul class="impact-list">
-                <li>SAML 요청/응답 검증, 메타데이터 관리, 인증서 만료 및 clock skew 대응</li>
-                <li>다중 IdP 지원을 위한 구성/운영 구조 정리</li>
+                <li>고객사별로 다른 IdP(Okta, OneLogin, MS Entra ID) 환경을 단일 제품으로 수용하기 위한 SAML SP 구조 설계·운영</li>
+                <li>다중 IdP 지원을 위한 구성·운영 구조 정리</li>
                 <li>SLS/SLO 기반 세션 파기 흐름 구현 및 운영 이슈 대응</li>
-                <li>고객사 로그인 장애와 권한 연계 이슈 분석 및 수정 대응</li>
+                <li>고객사 로그인 장애와 권한 연계 이슈 분석 및 수정 대응 다수 경험</li>
               </ul>
               <p class="stack">
                 <strong>Tech</strong>: Spring Boot, SAML 2.0, Okta, OneLogin, Access Control
@@ -220,11 +221,11 @@
                 >
               </div>
               <p class="project-summary">
-                운영 이벤트를 다양한 채널과 고객사 시스템으로 연결하는 알림/업무 연동 기능을
-                개발했습니다.
+                고객사마다 다른 알림 인프라(사내 메신저, MQ, SMS 등)를 단일 인터페이스로
+                연결하는 알림·연동 채널 레이어를 개발했습니다.
               </p>
               <ul class="impact-list">
-                <li>Slack, KakaoTalk, Email, SMS, MQ, UDP 채널 연동</li>
+                <li>Slack, KakaoTalk, Email, SMS, MQ, UDP 6개 채널 연동</li>
                 <li>고객사 사내 메신저 및 업무 시스템과 REST API 기반 연동 구현</li>
                 <li>알림 전달 방식과 고객사 요구사항에 맞춘 커스터마이징 대응</li>
               </ul>
@@ -249,6 +250,26 @@
               </ul>
               <p class="stack">
                 <strong>Focus</strong>: AI Workflow Automation, Evaluation Harness, Team Productivity
+              </p>
+            </div>
+
+            <div class="project-card">
+              <div class="project-head">
+                <h4>개발 환경 개선 & 내부 도구</h4>
+                <span class="project-time">사내 주도</span>
+              </div>
+              <p class="project-summary">
+                반복 작업, 레거시 전환, 보안 점검 등 팀 차원의 비효율을 발견하고 자동화·표준화를 주도했습니다.
+              </p>
+              <ul class="impact-list">
+                <li>Sparrow 보안 점검을 CI/CD 파이프라인에 통합해 프로젝트별 수동 실행 작업 제거</li>
+                <li>SVN → Git 마이그레이션 주도: 브랜치 전략·커밋 규칙 정립 및 팀 협업 기준 재정립</li>
+                <li>JDK 8 → 21 전환 시 반복 작업을 자동화 처리해 전체 프로젝트 적용 효율화</li>
+                <li>민감정보 프로퍼티를 KMS 기반으로 전환하는 작업 자동화 및 재사용 가능한 형태로 팀 공유</li>
+                <li>현장 엔지니어 지원용 프로젝트 컨텍스트 기반 챗봇/CLI 개발 (Notebook LM 기반)</li>
+              </ul>
+              <p class="stack">
+                <strong>Focus</strong>: CI/CD, Git Migration, JDK Upgrade Automation, KMS, Developer Productivity
               </p>
             </div>
           </div>
@@ -300,8 +321,8 @@
               계속 개선하면서 서비스 운영 감각을 키우고 있습니다.
             </p>
             <ul class="impact-list">
-              <li>DAU 약 500 규모의 사용자 대상 콘텐츠 서비스 운영</li>
-              <li>월 평균 약 50만 원 수준의 수익이 발생하는 서비스 유지</li>
+              <li>약 30개 앱 출시 및 운영, 최대 DAU 약 3,000 / 평균 약 800</li>
+              <li>월 수익 약 50만 원 수준의 서비스 유지 운영</li>
               <li>이미지 자산 제공 구조를 로컬 중심 방식에서 Cloudflare R2 기반으로 마이그레이션</li>
               <li>스토리지 운영, 콘텐츠 제공 구조, 유지보수 편의성을 함께 고려해 구조 개선</li>
             </ul>
@@ -370,13 +391,13 @@
             </div>
           </article>
           <article class="skill-group">
-            <h3>AI & Product</h3>
+            <h3>AI & Automation</h3>
             <div class="tag-list">
               <span class="tag">AI Workflow Automation</span>
               <span class="tag">Evaluation Harness</span>
-              <span class="tag">Troubleshooting</span>
-              <span class="tag">Requirement Analysis</span>
-              <span class="tag">Service Operation</span>
+              <span class="tag">Claude Code</span>
+              <span class="tag">n8n</span>
+              <span class="tag">Notebook LM</span>
             </div>
           </article>
         </div>
@@ -385,11 +406,15 @@
       <section class="section">
         <div class="panel-grid">
           <article class="panel">
-            <h3>자격</h3>
+            <h3>자격 & 수상</h3>
             <ul>
               <li>SQLD</li>
               <li>ADsP</li>
               <li>AWS Certified Solutions Architect – Associate</li>
+            </ul>
+            <p class="panel-sub-label">수상</p>
+            <ul>
+              <li>2022 DevCamp 1기 최우수상 (상금 300만원)</li>
             </ul>
           </article>
           <article class="panel">

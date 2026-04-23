@@ -60,16 +60,19 @@
           <div>
             <h1>Sunwoo Lee</h1>
             <p class="hero-summary">
-              Backend engineer focused on enterprise integration, identity systems, and
-              operational automation. At a solution company, I connect customer environments
-              with product features across HR integration, SSO, access control, and
-              notification flows. I also participate in an internal AI task force and run a
-              small consumer app as a side business.
+              For three years I have built the integration backend that connects each
+              customer's unique identity systems, organization data, and messaging
+              infrastructure into a single product. Beyond wiring integrations, I make
+              it a point to spot recurring inefficiencies and failure risks during
+              operations — and resolve them through automation or structural improvement.
+              I am currently designing workflow automation and evaluation harnesses in an
+              AI task force, while keeping a product-operations perspective by running
+              ~30 apps myself.
             </p>
             <ul class="key-points">
               <li>3+ years of backend development with Java 21, Spring Boot, and MyBatis</li>
               <li>Hands-on experience with LDAP, REST API, DB, File, MQ, UDP, and SAML 2.0</li>
-              <li>Built AI workflow automation / evaluation harness and operated a wallpaper app with about 500 DAU</li>
+              <li>Built AI workflow automation / evaluation harness and operate ~30 apps with up to 3,000 DAU (avg. ~800)</li>
             </ul>
             <div class="chip-row">
               <span class="chip">Java 21</span>
@@ -141,6 +144,7 @@
           <div class="experience-meta">
             <h3>Netand</h3>
             <span class="role">Backend Developer</span>
+            <span class="company-desc">Enterprise network access control solution (HIWARE) company</span>
             <span class="period"><time datetime="2023-06">Jun 2023</time> - Present</span>
           </div>
           <div class="experience-body">
@@ -149,12 +153,12 @@
                 <h4>HIWARE HR / External System Integration</h4>
                 <span class="project-time"><time datetime="2023-06">Jun 2023</time> - Present</span>
               </div>
-              <p class="project-summary">Built and operated backend integration features for synchronizing organization and HR data across heterogeneous customer environments.</p>
+              <p class="project-summary">Unified heterogeneous customer directory systems at the product level and built safeguards to prevent large-scale HR data misapplication.</p>
               <ul class="impact-list">
-                <li>Implemented integrations across LDAP, REST API, DB, File, MQ, and UDP</li>
-                <li>Maintained and improved Spring Batch-based synchronization jobs</li>
-                <li>Refactored asynchronous flows from Future-based logic to CompletableFuture</li>
-                <li>Handled customer-specific interface differences and production exceptions</li>
+                <li>Absorbed diverse customer directory systems (LDAP, REST, DB, File, MQ, UDP across 5 DB engines) via connector abstraction, making the product resilient to customer environment changes</li>
+                <li>Designed a 3-layer data safety guard to prevent bulk HR data errors — independently controlling reduction rate, absolute minimum, and resignation thresholds</li>
+                <li>Maintained and improved Spring Batch-based HR synchronization jobs</li>
+                <li>Refactored async flows from Future-based logic to CompletableFuture, improving readability and maintainability</li>
               </ul>
               <p class="stack"><strong>Tech</strong>: Java 21, Spring Boot, Spring Batch, MyBatis, Oracle, MSSQL, PostgreSQL, MySQL, MariaDB, LDAP, REST API, IBM MQ, UDP</p>
             </div>
@@ -164,12 +168,12 @@
                 <h4>HIWARE SSO / Access Control Integration</h4>
                 <span class="project-time"><time datetime="2023-06">Jun 2023</time> - Present</span>
               </div>
-              <p class="project-summary">Built and operated SAML-based SSO across multiple identity providers and handled product-facing authentication issues.</p>
+              <p class="project-summary">Each customer brings a different IdP (Okta, OneLogin, MS Entra ID) — designed and operated the SAML SP structure to absorb that diversity in a single product.</p>
               <ul class="impact-list">
-                <li>Implemented SAML request/response validation and metadata management</li>
-                <li>Organized multi-IdP support for Okta and OneLogin</li>
+                <li>Designed and operated a SAML SP structure to accommodate per-customer IdP differences (Okta, OneLogin, MS Entra ID) within a single product</li>
+                <li>Organized multi-IdP support configuration and operational structure</li>
                 <li>Implemented SLS/SLO-based session invalidation flows</li>
-                <li>Investigated login and permission-related integration issues</li>
+                <li>Investigated and resolved login and permission-related integration issues across customer environments</li>
               </ul>
               <p class="stack"><strong>Tech</strong>: Spring Boot, SAML 2.0, Okta, OneLogin, Access Control</p>
             </div>
@@ -179,9 +183,9 @@
                 <h4>HIWARE Notification / Workflow Integration</h4>
                 <span class="project-time"><time datetime="2023-06">Jun 2023</time> - Present</span>
               </div>
-              <p class="project-summary">Developed integration features that connect product events to notification channels and customer workflow systems.</p>
+              <p class="project-summary">Built a notification channel layer that connects each customer's different alert infrastructure (internal messengers, MQ, SMS, etc.) through a single interface.</p>
               <ul class="impact-list">
-                <li>Integrated Slack, KakaoTalk, Email, SMS, MQ, and UDP channels</li>
+                <li>Integrated 6 notification channels: Slack, KakaoTalk, Email, SMS, MQ, and UDP</li>
                 <li>Implemented REST API-based integration with customer internal systems</li>
                 <li>Supported customer-specific customization for notification delivery</li>
               </ul>
@@ -200,6 +204,22 @@
                 <li>Reviewed AI automation from an operational adoption perspective</li>
               </ul>
               <p class="stack"><strong>Focus</strong>: AI Workflow Automation, Evaluation Harness, Team Productivity</p>
+            </div>
+
+            <div class="project-card">
+              <div class="project-head">
+                <h4>Dev Environment Improvements & Internal Tooling</h4>
+                <span class="project-time">Internal initiative</span>
+              </div>
+              <p class="project-summary">Identified team-wide inefficiencies — repetitive tasks, legacy migrations, security checks — and led automation and standardization efforts.</p>
+              <ul class="impact-list">
+                <li>Integrated Sparrow security scanning into CI/CD pipeline, eliminating per-project manual runs</li>
+                <li>Led SVN → Git migration: established branch strategy, commit conventions, and team collaboration standards</li>
+                <li>Automated repetitive steps in JDK 8 → 21 upgrades, making the process reusable across projects</li>
+                <li>Automated sensitive property migration to KMS and shared as a reusable tool with the team</li>
+                <li>Built a project-context-aware chatbot/CLI for field engineers using Notebook LM</li>
+              </ul>
+              <p class="stack"><strong>Focus</strong>: CI/CD, Git Migration, JDK Upgrade Automation, KMS, Developer Productivity</p>
             </div>
           </div>
         </article>
@@ -239,7 +259,7 @@
             </div>
             <p class="project-summary">Directly develop and operate a wallpaper app with real users and revenue.</p>
             <ul class="impact-list">
-              <li>Operated a consumer content service with about 500 DAU</li>
+              <li>Launched and operated ~30 apps; peak DAU ~3,000 / average ~800</li>
               <li>Maintained roughly KRW 500,000 in monthly revenue</li>
               <li>Migrated image delivery/storage to Cloudflare R2</li>
               <li>Improved maintainability and delivery structure from an operations perspective</li>
@@ -307,13 +327,13 @@
             </div>
           </article>
           <article class="skill-group">
-            <h3>AI & Product</h3>
+            <h3>AI & Automation</h3>
             <div class="tag-list">
               <span class="tag">AI Workflow Automation</span>
               <span class="tag">Evaluation Harness</span>
-              <span class="tag">Troubleshooting</span>
-              <span class="tag">Requirement Analysis</span>
-              <span class="tag">Service Operation</span>
+              <span class="tag">Claude Code</span>
+              <span class="tag">n8n</span>
+              <span class="tag">Notebook LM</span>
             </div>
           </article>
         </div>
@@ -322,11 +342,15 @@
       <section class="section">
         <div class="panel-grid">
           <article class="panel">
-            <h3>Certifications</h3>
+            <h3>Certifications & Awards</h3>
             <ul>
               <li>SQLD</li>
               <li>ADsP</li>
               <li>AWS Certified Solutions Architect – Associate</li>
+            </ul>
+            <p class="panel-sub-label">Awards</p>
+            <ul>
+              <li>2022 DevCamp Cohort 1 — Best Project Award (KRW 3,000,000)</li>
             </ul>
           </article>
           <article class="panel">
