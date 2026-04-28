@@ -235,11 +235,11 @@
               </p>
               <ul class="impact-list">
                 <li>AWS Bedrock 사용량 모니터링을 위해 Kinesis Data Firehose → S3 → Glue → Athena 파이프라인과 CloudWatch·CloudTrail·SNS 알림 체계 구축</li>
-                <li>2.5만 건 이상의 이슈, 13만 건 이상의 코멘트, 1.5만 건 이상의 커밋을 SQLite DB로 정리하고 이슈 분석과 작업 계획 생성을 보조하는 자동화 프로토타입 구현</li>
+                <li>2.5만 건 이상의 Redmine 이슈를 PostgreSQL + pgvector로 마이그레이션하고, 10종 도메인 자동 분류 → 소스 코드 벡터 검색 → AI 수정 코드 생성 → 자동 테스트 → Redmine 등록 초안 작성까지 이어지는 에이전트 파이프라인으로 발전</li>
                 <li>배포 컨텍스트를 자동 수집해 고객사별 NotebookLM 챗봇을 만드는 TypeScript CLI와 사내 AI 뉴스 메일링 파이프라인 운영</li>
               </ul>
               <p class="stack">
-                <strong>Tech</strong>: AWS Bedrock, Kinesis Data Firehose, CloudWatch, CloudTrail, S3, Glue, Athena, SQLite, Python, TypeScript, n8n, Claude Code
+                <strong>Tech</strong>: AWS Bedrock, Kinesis Data Firehose, CloudWatch, CloudTrail, S3, Glue, Athena, PostgreSQL, pgvector, OpenHands, Python, TypeScript, n8n, Claude Code
               </p>
             </div>
 
