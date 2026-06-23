@@ -205,6 +205,28 @@
 
             <div class="project-card">
               <div class="project-head">
+                <h4>Kubernetes 접근통제 고도화 (EKS)</h4>
+                <span class="project-time"
+                  ><time datetime="2026-06">2026.06</time> - 현재</span
+                >
+              </div>
+              <p class="project-summary">
+                팀의 Kubernetes 접근통제 로드맵 과제에 참여해, AWS EKS 클러스터 접근을
+                개인 단위로 통제·감사하는 기능 개발에 기여했습니다.
+              </p>
+              <ul class="impact-list">
+                <li>기존 ServiceAccount 토큰 방식의 계정 공유·개인 추적 불가 한계를, 사용자별 IAM User ARN을 Trust Policy에 등록·해제하는 AWS IAM AssumeRole 기반 접근통제로 개선하는 개발에 참여</li>
+                <li>IAM Roles Anywhere(X.509 인증서 기반 STS 임시 자격증명)를 적용해 장기 Access Key 없이 폐쇄망 환경에서 AWS API 자격증명을 연동</li>
+                <li>K8S Connector Server 연동으로 클라우드 계정·권한을 수집하고, IAM Role provisioning(/ASA) 백엔드 구현에 참여</li>
+                <li>ApiLoggingFilter 연동으로 AssumeRole 세션 기반 kubectl 명령을 사용자 단위로 추적·감사하는 흐름 구현</li>
+              </ul>
+              <p class="stack">
+                <strong>Tech</strong>: Java, Spring Boot, Kubernetes, AWS EKS, IAM AssumeRole, IAM Roles Anywhere, STS
+              </p>
+            </div>
+
+            <div class="project-card">
+              <div class="project-head">
                 <h4>HIWARE 알림 / 업무 시스템 연동</h4>
                 <span class="project-time"
                   ><time datetime="2023-06">2023.06</time> - 현재</span
@@ -235,11 +257,12 @@
               </p>
               <ul class="impact-list">
                 <li>AWS Bedrock 사용량 모니터링을 위해 Kinesis Data Firehose → S3 → Glue → Athena 파이프라인과 CloudWatch·CloudTrail·SNS 알림 체계 구축</li>
-                <li>Redmine 이슈 증분 수집 → pgvector 의미 검색 → 업무 5종·커스텀 10종 자동 분류 → GitLab 저장소 자동 탐색·패치 추출 → Type1/Type2 이원 전략 AI 영향도 분석(risk_score 0~100) → FastAPI·HTMX 개발자 검토 대시보드 → OpenHands 자동 코드 수정 → Jenkins CI/CD·자동 테스트 → Redmine 자동 업데이트로 이어지는 엔터프라이즈 업그레이드 자동화 파이프라인을 주도적으로 설계·개발</li>
+                <li>Redmine 이슈 증분 수집(30분 스케줄) → pgvector 의미 검색 → 업무 5종·커스텀 10종 자동 분류 → Type1/Type2 이원 전략 결정 → GitLab 저장소 자동 탐색·커스텀 패치 추출 → Claude 기반 AI 영향도 분석(risk_score 0~100, 과거 사례·DB 스키마 버전 주의사항 주입) → Next.js·FastAPI 개발자 검토 대시보드 → Claude 기반 코드 수정안 자동 생성(dry-run diff)·라인별 검토 → Docker·Maven 빌드 자동 실행·상태 추적 → Redmine 코멘트 자동 등록(Textile 변환)으로 이어지는 엔터프라이즈 업그레이드 자동화 파이프라인을 주도적으로 설계·개발</li>
+                <li>함수 단위 코드 인덱싱(tree-sitter·pgvector)과 이슈·소스·Notion 문서를 결합한 RAG 기반 사내 기술 지원 챗봇 및 일감 기반 회의 브리핑 자동 생성 기능을 구현(첨부파일 OCR·인용 매핑 포함)</li>
                 <li>배포 컨텍스트를 자동 수집해 고객사별 NotebookLM 챗봇을 만드는 TypeScript CLI와 사내 AI 뉴스 메일링 파이프라인 운영</li>
               </ul>
               <p class="stack">
-                <strong>Tech</strong>: Python, FastAPI, PostgreSQL, pgvector, sentence-transformers, GitLab API, Redmine API, Claude Code, OpenHands, Jenkins, AWS Bedrock, Kinesis Data Firehose, S3, Glue, Athena, HTMX, Docker, TypeScript, n8n
+                <strong>Tech</strong>: Python, FastAPI, Next.js, PostgreSQL, pgvector, sentence-transformers, tree-sitter, GitLab API, Redmine API, Notion API, Claude Code, AWS Bedrock, Kinesis Data Firehose, S3, Glue, Athena, Docker, Maven, TypeScript, n8n
               </p>
             </div>
 
@@ -337,6 +360,7 @@
               <span class="tag">Glue</span>
               <span class="tag">Athena</span>
               <span class="tag">Docker</span>
+              <span class="tag">Docker Compose</span>
               <span class="tag">Cloudflare R2</span>
             </div>
           </article>
@@ -383,6 +407,10 @@
               <li>
                 ADsP (데이터분석 준전문가)
                 <span class="cert-meta">한국데이터산업진흥원 · 2025.03.21</span>
+              </li>
+              <li>
+                CKA (Certified Kubernetes Administrator)
+                <span class="cert-meta">Cloud Native Computing Foundation · 2026.08 취득 예정</span>
               </li>
             </ul>
             <p class="panel-sub-label">수상</p>

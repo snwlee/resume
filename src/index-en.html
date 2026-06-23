@@ -183,6 +183,24 @@
 
             <div class="project-card">
               <div class="project-head">
+                <h4>Kubernetes Access Control Enhancement (EKS)</h4>
+                <span class="project-time"><time datetime="2026-06">Jun 2026</time> - Present</span>
+              </div>
+              <p class="project-summary">
+                Contributed to the team's Kubernetes access-control roadmap initiative, helping build
+                per-user access control and auditing for AWS EKS cluster access.
+              </p>
+              <ul class="impact-list">
+                <li>Contributed to AWS IAM AssumeRole-based access control that registers/removes each user's IAM User ARN in the Trust Policy, resolving the account-sharing and lack-of-individual-traceability limits of the ServiceAccount token approach</li>
+                <li>Applied IAM Roles Anywhere (X.509 certificate-based STS temporary credentials) to integrate AWS API credentials in air-gapped environments without long-lived access keys</li>
+                <li>Contributed to IAM Role provisioning backend (/ASA) and K8S Connector Server integration for collecting cloud accounts and permissions</li>
+                <li>Implemented per-user tracking and auditing of kubectl commands over AssumeRole sessions via ApiLoggingFilter integration</li>
+              </ul>
+              <p class="stack"><strong>Tech</strong>: Java, Spring Boot, Kubernetes, AWS EKS, IAM AssumeRole, IAM Roles Anywhere, STS</p>
+            </div>
+
+            <div class="project-card">
+              <div class="project-head">
                 <h4>HIWARE Notification / Workflow Integration</h4>
                 <span class="project-time"><time datetime="2023-06">Jun 2023</time> - Present</span>
               </div>
@@ -209,11 +227,12 @@
               </p>
               <ul class="impact-list">
                 <li>Built AWS Bedrock usage monitoring with Kinesis Data Firehose → S3 → Glue → Athena plus CloudWatch, CloudTrail, and SNS alerting</li>
-                <li>Led the design and development of an enterprise upgrade automation pipeline: Redmine incremental sync → pgvector semantic issue search → 15-type auto-classification → GitLab repository auto-discovery and patch extraction → Type1/Type2 dual-strategy AI impact analysis (risk score 0–100) → developer review dashboard (FastAPI + HTMX) → automated code fixes (OpenHands) → Jenkins CI/CD and automated tests → Redmine auto-update</li>
+                <li>Led the design and development of an enterprise upgrade automation pipeline: Redmine incremental sync (30-min schedule) → pgvector semantic issue search → 15-type auto-classification → Type1/Type2 dual-strategy decision → GitLab repository auto-discovery and custom patch extraction → Claude-based AI impact analysis (risk score 0–100, with past cases and DB schema version notes injected) → developer review dashboard (Next.js + FastAPI) → Claude-based automated code-fix generation (dry-run diff) with line-level review → Docker/Maven build automation with status tracking → automated Redmine comment posting (Textile conversion)</li>
+                <li>Implemented a RAG-based internal technical support chatbot combining function-level code indexing (tree-sitter + pgvector) with issue, source, and Notion document search, plus automated meeting-briefing generation from tickets (including attachment OCR and citation mapping)</li>
                 <li>Built a TypeScript CLI that assembles per-deployment context into customer-specific NotebookLM chatbots, and operated an internal AI newsletter pipeline for the engineering team</li>
               </ul>
               <p class="stack">
-                <strong>Tech</strong>: Python, FastAPI, PostgreSQL, pgvector, sentence-transformers, GitLab API, Redmine API, Claude Code, OpenHands, Jenkins, AWS Bedrock, Kinesis Data Firehose, S3, Glue, Athena, HTMX, Docker, TypeScript, n8n
+                <strong>Tech</strong>: Python, FastAPI, Next.js, PostgreSQL, pgvector, sentence-transformers, tree-sitter, GitLab API, Redmine API, Notion API, Claude Code, AWS Bedrock, Kinesis Data Firehose, S3, Glue, Athena, Docker, Maven, TypeScript, n8n
               </p>
             </div>
 
@@ -306,6 +325,7 @@
               <span class="tag">Glue</span>
               <span class="tag">Athena</span>
               <span class="tag">Docker</span>
+              <span class="tag">Docker Compose</span>
               <span class="tag">Cloudflare R2</span>
             </div>
           </article>
@@ -352,6 +372,10 @@
               <li>
                 ADsP (Advanced Data Analytics Semi-Professional)
                 <span class="cert-meta">Korea Data Industry Promotion Agency · Mar 21, 2025</span>
+              </li>
+              <li>
+                CKA (Certified Kubernetes Administrator)
+                <span class="cert-meta">Cloud Native Computing Foundation · Expected Aug 2026</span>
               </li>
             </ul>
             <p class="panel-sub-label">Awards</p>
