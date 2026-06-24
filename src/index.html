@@ -295,6 +295,27 @@
         <div class="experience-body">
           <div class="project-card">
             <div class="project-head">
+              <h3>triage-rag</h3>
+              <span class="project-time">오픈소스 · 개인 프로젝트</span>
+            </div>
+            <p class="project-summary">
+              이슈 트래커를 의미 검색으로 분류하고, 과거 해결 사례를 RAG로 주입해 영향도를
+              분석하는 로컬 동작 파이프라인입니다. (사내 AI 자동화 경험을 공개용으로 일반화)
+            </p>
+            <ul class="impact-list">
+              <li>pgvector 의미 검색과 과거 사례 RAG 주입으로 이슈 자동 분류·영향도 분석(risk_score·근거 인용), LLM 키 없이 룰 기반 폴백으로 완전 오프라인 동작</li>
+              <li>tree-sitter 함수 단위 코드 인덱싱과 하이브리드 검색(벡터+full-text, RRF 융합) 구현</li>
+              <li>분류 정확도 eval 하니스(precision/recall·혼동행렬)와 ruff·mypy·GitHub Actions CI(pgvector 통합 검증) 구성</li>
+            </ul>
+            <p class="stack">
+              <strong>Tech</strong>: Python, FastAPI, PostgreSQL, pgvector, sentence-transformers, tree-sitter, HTMX, Docker
+            </p>
+            <p class="project-link">
+              <a href="https://github.com/snwlee/triage-rag" target="_blank" rel="noopener">github.com/snwlee/triage-rag</a>
+            </p>
+          </div>
+          <div class="project-card">
+            <div class="project-head">
               <h3>배경화면 앱 운영</h3>
               <span class="project-time">개인 서비스</span>
             </div>

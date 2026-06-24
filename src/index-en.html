@@ -263,6 +263,28 @@
         <div class="experience-body">
           <div class="project-card">
             <div class="project-head">
+              <h3>triage-rag</h3>
+              <span class="project-time">Open source · Personal project</span>
+            </div>
+            <p class="project-summary">
+              A local-first pipeline that classifies an issue tracker with semantic search and
+              injects past resolved cases as RAG context to assess impact. (An anonymized,
+              public generalization of internal AI-automation work.)
+            </p>
+            <ul class="impact-list">
+              <li>pgvector semantic search + past-case RAG injection for auto-classification and impact analysis (risk_score with citations); runs fully offline via a rule-based fallback when no LLM key is set</li>
+              <li>Function-level code indexing with tree-sitter and hybrid search (vector + full-text via Reciprocal Rank Fusion)</li>
+              <li>Classification eval harness (precision/recall, confusion matrix) plus ruff, mypy, and GitHub Actions CI (pgvector integration)</li>
+            </ul>
+            <p class="stack">
+              <strong>Tech</strong>: Python, FastAPI, PostgreSQL, pgvector, sentence-transformers, tree-sitter, HTMX, Docker
+            </p>
+            <p class="project-link">
+              <a href="https://github.com/snwlee/triage-rag" target="_blank" rel="noopener">github.com/snwlee/triage-rag</a>
+            </p>
+          </div>
+          <div class="project-card">
+            <div class="project-head">
               <h3>Wallpaper App Operation</h3>
               <span class="project-time">Side Business</span>
             </div>
