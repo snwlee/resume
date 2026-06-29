@@ -232,7 +232,11 @@
               </p>
               <ul class="impact-list">
                 <li>Built AWS Bedrock usage monitoring with Kinesis Data Firehose → S3 → Glue → Athena plus CloudWatch, CloudTrail, and SNS alerting</li>
-                <li>Led the design and development of an enterprise upgrade automation pipeline: Redmine incremental sync (30-min schedule) → pgvector semantic issue search → 15-type auto-classification → Type1/Type2 dual-strategy decision → GitLab repository auto-discovery and custom patch extraction → Claude-based AI impact analysis (risk score 0–100, with past cases and DB schema version notes injected) → developer review dashboard (Next.js + FastAPI) → Claude-based automated code-fix generation (dry-run diff) with line-level review → Docker/Maven build automation with status tracking → automated Redmine comment posting (Textile conversion)</li>
+                <li><strong>Led the design and development of an enterprise upgrade automation pipeline</strong> — full automation from issue intake through AI code-fix generation, build verification, and result posting</li>
+                <li>Intake &amp; classification: Redmine incremental sync (30-min schedule) → pgvector semantic search → 15-type auto-classification → Type1/Type2 dual-strategy decision</li>
+                <li>AI impact analysis: GitLab repository auto-discovery and custom patch extraction, then Claude-based analysis (risk score 0–100) with past cases and DB schema version notes injected via RAG</li>
+                <li>Review &amp; code generation: Claude-based automated code-fix generation (dry-run diff, line-level review) in a Next.js + FastAPI developer review dashboard</li>
+                <li>Build &amp; posting: Docker/Maven build automation with status tracking → automated Redmine comment posting (Textile conversion)</li>
                 <li>Implemented a RAG-based internal technical support chatbot combining function-level code indexing (tree-sitter + pgvector) with issue, source, and Notion document search, plus automated meeting-briefing generation from tickets (including attachment OCR and citation mapping)</li>
                 <li>Built a TypeScript CLI that assembles per-deployment context into customer-specific NotebookLM chatbots, and operated an internal AI newsletter pipeline for the engineering team</li>
               </ul>

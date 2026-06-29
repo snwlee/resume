@@ -262,7 +262,11 @@
               </p>
               <ul class="impact-list">
                 <li>AWS Bedrock 사용량 모니터링을 위해 Kinesis Data Firehose → S3 → Glue → Athena 파이프라인과 CloudWatch·CloudTrail·SNS 알림 체계 구축</li>
-                <li>Redmine 이슈 증분 수집(30분 스케줄) → pgvector 의미 검색 → 업무 5종·커스텀 10종 자동 분류 → Type1/Type2 이원 전략 결정 → GitLab 저장소 자동 탐색·커스텀 패치 추출 → Claude 기반 AI 영향도 분석(risk_score 0~100, 과거 사례·DB 스키마 버전 주의사항 주입) → Next.js·FastAPI 개발자 검토 대시보드 → Claude 기반 코드 수정안 자동 생성(dry-run diff)·라인별 검토 → Docker·Maven 빌드 자동 실행·상태 추적 → Redmine 코멘트 자동 등록(Textile 변환)으로 이어지는 엔터프라이즈 업그레이드 자동화 파이프라인을 주도적으로 설계·개발</li>
+                <li><strong>엔터프라이즈 업그레이드 자동화 파이프라인</strong>을 주도적으로 설계·개발 — 이슈 수집부터 AI 코드 수정안 생성·빌드 검증·결과 반영까지 전 구간 자동화</li>
+                <li>수집·분류: Redmine 이슈 증분 수집(30분 스케줄) → pgvector 의미 검색 → 업무 5종·커스텀 10종 자동 분류 → Type1/Type2 이원 처리 전략 결정</li>
+                <li>AI 영향도 분석: GitLab 저장소 자동 탐색·커스텀 패치 추출 후, 과거 사례·DB 스키마 버전 주의사항을 RAG로 주입한 Claude 기반 분석(risk_score 0~100)</li>
+                <li>검토·코드 생성: Next.js·FastAPI 개발자 검토 대시보드에서 Claude 기반 코드 수정안 자동 생성(dry-run diff·라인별 검토)</li>
+                <li>빌드·반영: Docker·Maven 빌드 자동 실행·상태 추적 → Redmine 코멘트 자동 등록(Textile 변환)</li>
                 <li>함수 단위 코드 인덱싱(tree-sitter·pgvector)과 이슈·소스·Notion 문서를 결합한 RAG 기반 사내 기술 지원 챗봇 및 일감 기반 회의 브리핑 자동 생성 기능을 구현(첨부파일 OCR·인용 매핑 포함)</li>
                 <li>배포 컨텍스트를 자동 수집해 고객사별 NotebookLM 챗봇을 만드는 TypeScript CLI와 사내 AI 뉴스 메일링 파이프라인 운영</li>
               </ul>
