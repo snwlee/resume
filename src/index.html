@@ -219,6 +219,7 @@
                 <li>IAM Roles Anywhere(X.509 인증서 기반 STS 임시 자격증명)를 적용해 장기 Access Key 없이 폐쇄망 환경에서 AWS API 자격증명을 연동</li>
                 <li>K8S Connector Server 연동으로 클라우드 계정·권한을 수집하고, IAM Role provisioning(/ASA) 백엔드 구현에 참여</li>
                 <li>ApiLoggingFilter 연동으로 AssumeRole 세션 기반 kubectl 명령을 사용자 단위로 추적·감사하는 흐름 구현</li>
+                <li>Keycloak(OIDC IdP)으로 EKS 인증을 SSO로 일원화해 AWS CLI 의존을 제거하는 PoC 주도 — EKS OIDC Identity Provider 연동·IAM Roles Anywhere(X.509) 검토 (진행 중)</li>
               </ul>
               <p class="stack">
                 <strong>Tech</strong>: Java, Spring Boot, Kubernetes, AWS EKS, IAM AssumeRole, IAM Roles Anywhere, STS
