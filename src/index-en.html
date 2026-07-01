@@ -60,9 +60,9 @@
           <div>
             <h1>Sunwoo Lee</h1>
             <p class="hero-summary">
-              I build enterprise integration backends that connect heterogeneous
-              identity (SAML/LDAP), directory, and messaging environments into a
-              single product. My focus is on the paths that create operational
+              Since 2023, across 215+ enterprise customers, I build integration
+              backends that connect heterogeneous identity (SAML/LDAP), directory,
+              and messaging environments into a single product. My focus is on the paths that create operational
               incidents — batch HR sync, multi-IdP SSO/SLO, and notification
               recovery — where I design safety guards and reprocessing flows.
               I also led the development of an agentic pipeline that automates
@@ -154,7 +154,7 @@
                 built safeguards to reduce the risk of large-scale HR data mistakes.
               </p>
               <ul class="impact-list">
-                <li>Implemented customer directory integrations across LDAP, REST, DB, File, MQ, UDP, and Oracle, MSSQL, PostgreSQL, MySQL, and MariaDB</li>
+                <li>Implemented HR/directory integrations for 117 customers across LDAP, REST, DB, File, MQ, UDP, and Oracle, MSSQL, PostgreSQL, MySQL, and MariaDB</li>
                 <li>Implemented data safety guards for bulk HR updates using reduction-rate, absolute-minimum, and resignation thresholds</li>
                 <li>Analyzed bottlenecks and clarified processing flows in Spring Batch-based HR synchronization jobs to improve operational troubleshooting</li>
                 <li>Refactored async flows from Future-based logic to CompletableFuture, improving exception handling and maintainability</li>
@@ -173,12 +173,12 @@
                 invalidation flows to handle those differences inside a single product.
               </p>
               <ul class="impact-list">
-                <li>Implemented and operated SAML SP integrations that support per-customer IdP differences across Okta, OneLogin, and MS Entra ID</li>
+                <li>Implemented and operated SAML SP integrations for 24 customers, handling per-customer IdP differences across Okta, OneLogin, MS Entra ID, Ping ID, and Authentik</li>
                 <li>Organized configuration values, metadata handling, and operational checks for multi-IdP support</li>
                 <li>Implemented SAML SLO-based IdP logout and session invalidation flows, handling operational differences across IdPs</li>
                 <li>Investigated and resolved login and permission-related integration issues across customer environments</li>
               </ul>
-              <p class="stack"><strong>Tech</strong>: Spring Boot, SAML 2.0, Okta, OneLogin, Access Control</p>
+              <p class="stack"><strong>Tech</strong>: Spring Boot, SAML 2.0, Okta, OneLogin, MS Entra ID, Ping ID, Authentik, Access Control</p>
             </div>
 
             <div class="project-card">
@@ -214,7 +214,7 @@
                 alert infrastructure (internal messengers, MQ, SMS, etc.) through a single interface.
               </p>
               <ul class="impact-list">
-                <li>Integrated 6 notification channels: Slack, KakaoTalk, Email, SMS, MQ, and UDP</li>
+                <li>Integrated 6 notification channels across 85 customers: Slack, KakaoTalk, Email, SMS, MQ, and UDP</li>
                 <li>Analyzed deadlocks in notification processing flows and clarified processing order and failure isolation rules to prevent recurrence</li>
                 <li>Defined retry policies by failure type and routed failed notifications to a DLQ, enabling controlled recovery and reprocessing</li>
                 <li>Handled per-customer notification customization beyond standard channels — channel selection, message format, and delivery conditions</li>

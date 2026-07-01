@@ -60,7 +60,7 @@
           <div>
             <h1>이선우</h1>
             <p class="hero-summary">
-              고객사별로 다른 인증 체계(SAML/LDAP)와 조직 데이터, 메시징 인프라를 단일 제품으로
+              2023년부터 215개 이상의 고객사를 대상으로, 서로 다른 인증 체계(SAML/LDAP)와 조직 데이터, 메시징 인프라를 단일 제품으로
               연결하는 엔터프라이즈 연동 백엔드를 담당합니다. 배치·알림·세션처럼 운영 이슈로
               이어질 수 있는 구간에 안전 가드와 재처리 흐름을 설계해 왔습니다. 2.5만 건 이상의
               이슈를 대상으로 도메인 자동 분류부터 AI 수정 코드 생성·자동 테스트까지 이어지는
@@ -171,7 +171,7 @@
                 대량 인사 데이터 오처리 가능성을 줄이는 안전 가드를 개발했습니다.
               </p>
               <ul class="impact-list">
-                <li>LDAP·REST·DB·File·MQ·UDP와 Oracle·MSSQL·PostgreSQL·MySQL·MariaDB 연동 구현 및 고객사 환경별 예외 대응</li>
+                <li>117개 고객사의 인사 시스템을 LDAP·REST·DB·File·MQ·UDP와 Oracle·MSSQL·PostgreSQL·MySQL·MariaDB로 연동 구현하고 고객사 환경별 예외 대응</li>
                 <li>대량 인사 데이터 오적용을 줄이기 위해 감소율·절대 최솟값·퇴사 임계값 기반의 안전 가드 구현</li>
                 <li>Spring Batch 기반 인사 동기화 배치의 병목 구간을 분석하고 처리 흐름을 정리해 운영 이슈 대응성 개선</li>
                 <li>Future 기반 비동기 로직을 CompletableFuture 중심 구조로 리팩토링해 예외 처리 흐름과 유지보수성 개선</li>
@@ -193,13 +193,13 @@
                 처리할 수 있도록 SAML SP 설정과 세션 파기 흐름을 구현·운영했습니다.
               </p>
               <ul class="impact-list">
-                <li>고객사별 IdP(Okta, OneLogin, MS Entra ID) 차이를 단일 제품에서 처리하기 위한 SAML SP 연동 구현·운영</li>
+                <li>24개 고객사의 IdP(Okta, OneLogin, MS Entra ID, Ping ID, Authentik 등) 차이를 단일 제품에서 처리하기 위한 SAML SP 연동 구현·운영</li>
                 <li>다중 IdP 지원을 위한 구성 값, 메타데이터 관리, 운영 점검 흐름 정리</li>
                 <li>SAML SLO 기반 IdP 로그아웃 및 세션 파기 흐름 구현, IdP별 차이를 고려한 운영 이슈 대응</li>
                 <li>고객사 로그인 장애와 권한 연계 이슈 분석 및 수정 대응 다수 경험</li>
               </ul>
               <p class="stack">
-                <strong>Tech</strong>: Spring Boot, SAML 2.0, Okta, OneLogin, Access Control
+                <strong>Tech</strong>: Spring Boot, SAML 2.0, Okta, OneLogin, MS Entra ID, Ping ID, Authentik, Access Control
               </p>
             </div>
 
@@ -242,7 +242,7 @@
                 연결하는 알림·연동 채널 레이어를 개발했습니다.
               </p>
               <ul class="impact-list">
-                <li>Slack, KakaoTalk, Email, SMS, MQ, UDP 6개 채널 연동</li>
+                <li>85개 고객사 대상 Slack, KakaoTalk, Email, SMS, MQ, UDP 6개 채널 알림 연동</li>
                 <li>알림 연동 처리 중 발생한 deadlock 원인을 분석하고 처리 순서와 실패 분리 흐름을 정리해 재발 방지 기준 마련</li>
                 <li>실패 유형별 재시도 정책을 정리하고 실패 건을 DLQ로 분리 적재해 재처리 가능한 복구 흐름 구축</li>
                 <li>표준 채널 외 고객사 전용 알림 요건(채널·포맷·발송 조건) 커스터마이징 처리</li>
